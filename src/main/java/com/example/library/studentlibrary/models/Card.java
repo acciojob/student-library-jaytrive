@@ -1,6 +1,7 @@
 package com.example.library.studentlibrary.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -9,6 +10,10 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
 public class Card {
 
     @Id
